@@ -1,167 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Scarlett Francini</title>
   <style>
-    /* Base styles */
     body {
       font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-      background-color: #ffffff;
-      color: #1a1a1a;
+      background-color: #fff;
+      color: #222;
       margin: 0;
       padding: 0;
-      line-height: 1.7;
-      font-size: 16px;
+      line-height: 1.6;
     }
 
-    /* Header */
     header {
       text-align: center;
       padding: 4rem 1rem 2rem;
-      border-bottom: 1px solid #eaeaea;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      font-weight: 600;
+    img.profile {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
 
-    header p {
-      margin-top: 0.75rem;
+    h1 {
+      font-size: 2.3rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.4rem;
+    }
+
+    p.subtitle {
       color: #555;
-      font-size: 1.1rem;
-    }
-
-    nav {
-      margin-top: 1.5rem;
-    }
-
-    nav a {
-      color: #333;
-      text-decoration: none;
-      margin: 0 0.8rem;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    nav a:hover {
-      color: #0070f3;
-    }
-
-    /* Main content */
-    main {
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 0 1rem;
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     section {
-      margin-bottom: 3.5rem;
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
 
     h2 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      border-bottom: 1px solid #eaeaea;
-      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.3rem;
       margin-bottom: 1.2rem;
-    }
-
-    p, li {
-      color: #333;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
+      font-weight: 500;
     }
 
     a {
-      color: #0070f3;
+      color: #1a1a1a;
       text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease;
     }
 
     a:hover {
-      text-decoration: underline;
+      border-bottom: 1px solid #000;
     }
 
-    /* Footer */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border: 1px solid #222;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      margin-right: 0.6rem;
+    }
+
+    .button-link:hover {
+      background-color: #222;
+      color: #fff;
+    }
+
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      border-top: 1px solid #eaeaea;
-      color: #777;
       font-size: 0.9rem;
+      color: #777;
+      padding: 2rem 0 3rem;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      main {
-        padding: 0 1.5rem;
-      }
+    .experience-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .experience-item h3 {
+      margin-bottom: 0.3rem;
+      font-size: 1.1rem;
+    }
+
+    .experience-item p {
+      color: #555;
+      margin-top: 0.2rem;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
   <header>
+    <!-- 🖼️ Add your profile image file inside your repo as /assets/profile.jpg -->
+    <img src="assets/profile.jpg" alt="Scarlett Francini" class="profile" />
     <h1>Scarlett Francini</h1>
-    <p>Electrical Engineering @ Duke | Climate Tech | Research & Innovation</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p class="subtitle">Researcher • Engineer • Sustainability Advocate</p>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I’m passionate about bridging technology and sustainability — using engineering, data, and design
-        to drive solutions for the climate crisis. I study Electrical and Computer Engineering at Duke University,
-        where I explore topics ranging from wireless networks to machine learning and systems design.
-      </p>
-    </section>
+  <section id="about">
+    <p>
+      Welcome! I’m Scarlett — a Duke University student passionate about advancing sustainable technology, 
+      wireless innovation, and scientific discovery. This portfolio showcases my research, publications, and professional experiences.
+    </p>
+  </section>
 
-    <section id="research">
-      <h2>Research</h2>
-      <p>
-        My current research focuses on scalable 3D scene modeling and digital twin generation for wireless networks,
-        emphasizing how simulation and AI can enable sustainable, data-driven infrastructure.
-      </p>
-    </section>
+  <section id="experience">
+    <h2>Experience</h2>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>ClickDT:</strong> Built a frontend and backend integration for 3D digital twin generation using LiDAR and OSM data.</li>
-        <li><strong>Geo2SigMap+:</strong> Contributed to scalable 3D scene generation and signal mapping research.</li>
-        <li><strong>Composting Program (Gold Award):</strong> Designed and implemented a self-sustained composting system at my school.</li>
-      </ul>
-    </section>
+    <div class="experience-item">
+      <h3>Timao — Tech Consulting Intern (Marseille, France)</h3>
+      <p>Developed automation workflows and AI-assisted data analysis tools for public procurement consulting. 
+         Enhanced GPT-based integration for internal client systems and contributed to the firm’s digital transformation strategy.</p>
+    </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Let’s connect — reach me at 
-        <a href="mailto:scarlett.francini@example.com">scarlett.francini@example.com</a>, 
-        or find me on 
-        <a href="https://www.linkedin.com/in/scarlettfrancini/">LinkedIn</a> and 
-        <a href="https://github.com/scarlettfrancini">GitHub</a>.
-      </p>
-    </section>
-  </main>
+    <div class="experience-item">
+      <h3>Nanomaterials and Thin Films Lab — Research Assistant</h3>
+      <p>Investigated molecular mechanisms of thin film deposition and contributed to two publications 
+         analyzing mass spectrometry data for nanomaterial growth characterization.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>FuNCtions Lab — Undergraduate Researcher</h3>
+      <p>Working on scalable wireless digital twin models using LiDAR and 3D scene generation 
+         to study CBRS and 5G coexistence with ray tracing simulation tools.</p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research & Publications</h2>
+    <ul>
+      <li><a href="https://pubs.acs.org/doi/abs/10.1021/jasms.3c00421" target="_blank">Nanomaterials and Thin Films Lab – ACS Publication</a></li>
+      <li><a href="https://www.sciencedirect.com/science/article/pii/S1387380624001799" target="_blank">Thin Film Deposition Mechanisms – ScienceDirect</a></li>
+      <li><a href="https://pratt.duke.edu/news/at-the-edge-of-wireless-innovation/" target="_blank">FuNCtions Lab – “At the Edge of Wireless Innovation” (Duke Pratt)</a></li>
+    </ul>
+  </section>
+
+  <section id="features">
+    <h2>Features & Awards</h2>
+    <ul>
+      <li><a href="https://ousf.duke.edu/profile/scarlett-francini/" target="_blank">Benjamin N. Duke Scholar – Duke University</a></li>
+      <li><a href="https://blog.nccoastalpines.org/2023/07/24/honoring-our-2023-gsusa-gold-award-scholarship-recipient/" target="_blank">GSUSA Gold Award Scholarship Recipient – Girl Scouts of the USA</a></li>
+    </ul>
+  </section>
+
+  <section id="resources">
+    <h2>Resources</h2>
+    <p>
+      <a href="files/Scarlett_Francini_CV.pdf" class="button-link" download>Download CV</a>
+      <a href="files/Research_Summary.pdf" class="button-link" download>Research Summary</a>
+      <a href="files/Poster_ThinFilms2024.pdf" class="button-link" download>Thin Films Poster</a>
+    </p>
+  </section>
+
+  <section id="connect">
+    <h2>Connect</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/scarlettfrancini" target="_blank" class="button-link">LinkedIn</a>
+    </p>
+  </section>
 
   <footer>
-    <p>© 2025 Scarlett Francini — Built with GitHub Pages</p>
+    © 2025 Scarlett Francini
   </footer>
+
 </body>
 </html>
