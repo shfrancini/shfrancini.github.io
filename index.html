@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Scarlett Francini</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #ffb347;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ffb347;
+      padding-bottom: 0.3rem;
+      color: #222;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #222;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, I’m Scarlett!</h1>
-  <p>Welcome to my personal site.</p>
+  <header>
+    <h1>Hello, I’m Scarlett!</h1>
+    <p>Electrical Engineering @ Duke | Climate Tech | Research & Innovation</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m passionate about bridging technology and sustainability — using engineering, data, and design
+        to drive solutions for the climate crisis. I’m currently studying Electrical Engineering at Duke University,
+        where I explore topics from machine learning to scalable wireless systems.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        My current work focuses on 3D scene modeling and scalable digital twins for wireless networks.
+        I’m particularly interested in how simulation, AI, and optimization can be used to advance
+        energy-efficient infrastructure.
+      </p>
+      <!-- You could later list your papers or research posters here -->
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>ClickDT:</strong> Built a frontend and backend integration for 3D digital twin generation using LiDAR and OSM data.</li>
+        <li><strong>Geo2SigMap+:</strong> Contributed to scalable 3D scene generation and signal mapping research.</li>
+        <li><strong>Composting Program (Gold Award):</strong> Designed and implemented a self-sustained composting system at my school.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Let’s connect! You can reach me via 
+        <a href="mailto:scarlett.francini@duke.edu">email</a> or find me on 
+        <a href="https://www.linkedin.com/in/scarlettfrancini/">LinkedIn</a> 
+        and <a href="https://github.com/scarlettfrancini">GitHub</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Scarlett Francini — Built with ❤️ using GitHub Pages</p>
+  </footer>
 </body>
 </html>
