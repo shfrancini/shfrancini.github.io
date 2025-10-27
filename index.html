@@ -37,7 +37,15 @@
       color: #555;
       font-size: 1.05rem;
       max-width: 600px;
+      margin: 0 auto 0.5rem;
+    }
+
+    p.education {
+      color: #555;
+      font-size: 0.95rem;
       margin: 0 auto;
+      max-width: 600px;
+      margin-bottom: 2rem;
     }
 
     section {
@@ -54,23 +62,13 @@
     }
 
     a {
-      color: #1a1a1a;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: all 0.2s ease;
+      color: #0070f3;
+      text-decoration: underline;
     }
 
     a:hover {
-      border-bottom: 1px solid #000;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 0.6rem;
+      color: #0051a3;
+      text-decoration: underline;
     }
 
     .button-link {
@@ -82,6 +80,7 @@
       font-size: 0.95rem;
       transition: all 0.2s ease;
       margin-right: 0.6rem;
+      margin-bottom: 0.5rem;
     }
 
     .button-link:hover {
@@ -91,9 +90,15 @@
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #777;
       padding: 2rem 0 3rem;
+    }
+
+    footer h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #222;
     }
 
     .experience-item {
@@ -109,6 +114,12 @@
       color: #555;
       margin-top: 0.2rem;
     }
+
+    .experience-item ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-top: 0.3rem;
+    }
   </style>
 </head>
 <body>
@@ -117,12 +128,13 @@
     <img src="files/profile.jpeg" alt="Scarlett Francini" class="profile" />
     <h1>Scarlett Francini</h1>
     <p class="subtitle">Researcher • Engineer • Sustainability Advocate</p>
+    <p class="education">BSE, Electrical & Computer Engineering + Computer Science, Duke University Pratt School of Engineering</p>
   </header>
 
   <section id="about">
     <p>
-      Welcome! I’m Scarlett — a Duke University student passionate about advancing sustainable technology, 
-      wireless innovation, and scientific discovery. This portfolio showcases my research, publications, and professional experiences.
+      Welcome! I’m Scarlett — a Duke University merit scholar passionate about sustainable technology, wireless innovation, and scientific discovery. 
+      This portfolio showcases selected research, publications, and professional experiences, with highlights from my work in AI, nanomaterials, and 3D digital twins.
     </p>
   </section>
 
@@ -130,59 +142,63 @@
     <h2>Experience</h2>
 
     <div class="experience-item">
-      <h3>Timao — Tech Consulting Intern (Marseille, France)</h3>
-      <p>Developed automation workflows and AI-assisted data analysis tools for public procurement consulting. 
-         Enhanced GPT-based integration for internal client systems and contributed to the firm’s digital transformation strategy.</p>
+      <h3>Timao &mdash; AI Implementation Intern | <i>Marseille, France</i> | June – July 2025</h3>
+      <p>Built Python automation scripts integrating GPT models and n8n workflows, cutting review time by 93%. Developed data pipelines for extracting and summarizing public procurement documents in French.</p>
     </div>
 
     <div class="experience-item">
-      <h3>Nanomaterials and Thin Films Lab — Research Assistant</h3>
-      <p>Investigated molecular mechanisms of thin film deposition and contributed to two publications 
-         analyzing mass spectrometry data for nanomaterial growth characterization.</p>
+      <h3>Duke University FuNCtions Lab &mdash; Undergraduate Researcher | Dec 2024 – Present</h3>
+      <p>Conducted research on scalable Digital Twin models using Nvidia Sionna. Co-developed the ClickDT platform integrating LiDAR and 3D scene generation; work submitted to IEEE.</p>
+      <ul>
+        <li><a href="https://pratt.duke.edu/news/at-the-edge-of-wireless-innovation/" target="_blank">“At the Edge of Wireless Innovation” – Duke Pratt</a></li>
+        <li><a href="files/FunctionsLab_DemoPaper.pdf" target="_blank">Demo Paper – ClickDT Platform</a></li>
+        <li><a href="files/FunctionsLab_ImpactStatement.pdf" target="_blank">Impact Statement – ClickDT Platform</a></li>
+      </ul>
     </div>
 
     <div class="experience-item">
-      <h3>FuNCtions Lab — Undergraduate Researcher</h3>
-      <p>Working on scalable wireless digital twin models using LiDAR and 3D scene generation 
-         to study CBRS and 5G coexistence with ray tracing simulation tools.</p>
+      <h3>Duke University Nanomaterials and Thin Films Lab &mdash; Undergraduate Researcher | June 2022 – Aug 2024</h3>
+      <p>Co-authored publications on thin film characterization. Developed Python GUI for visualizing MATLAB and R data for an underwater mass spectrometer.</p>
+      <ul>
+        <li>Publications:
+          <ul>
+            <li><a href="https://pubs.acs.org/doi/abs/10.1021/jasms.3c00421" target="_blank">ACS Publication – Spectral Reconstruction Improvement</a></li>
+            <li><a href="https://www.sciencedirect.com/science/article/pii/S1387380624001799" target="_blank">ScienceDirect – Thin Film Deposition Mechanisms</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.ncssm.edu" target="_blank">North Carolina School of Science and Mathematics</a> High School Segment | Summer 2022
+          <ul>
+            <li><a href="files/Poster_HighSchool.jpg" download>High School Nanomaterials Poster</a></li>
+            <li><a href="https://www.ncssm.edu/news/ncssm-students-gain-full-time-professional-research-experience-during-summer-mentorship" target="_blank">NCSSM Summer Mentorship Article Feature</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </section>
 
-  <section id="research">
-    <h2>Research & Publications</h2>
-    <ul>
-      <li><a href="https://pubs.acs.org/doi/abs/10.1021/jasms.3c00421" target="_blank">Nanomaterials and Thin Films Lab – ACS Publication</a></li>
-      <li><a href="https://www.sciencedirect.com/science/article/pii/S1387380624001799" target="_blank">Thin Film Deposition Mechanisms – ScienceDirect</a></li>
-      <li><a href="https://pratt.duke.edu/news/at-the-edge-of-wireless-innovation/" target="_blank">FuNCtions Lab – “At the Edge of Wireless Innovation” (Duke Pratt)</a></li>
-    </ul>
   </section>
 
   <section id="features">
-    <h2>Features & Awards</h2>
+    <h2>Awards</h2>
     <ul>
       <li><a href="https://ousf.duke.edu/profile/scarlett-francini/" target="_blank">Benjamin N. Duke Scholar – Duke University</a></li>
       <li><a href="https://blog.nccoastalpines.org/2023/07/24/honoring-our-2023-gsusa-gold-award-scholarship-recipient/" target="_blank">GSUSA Gold Award Scholarship Recipient – Girl Scouts of the USA</a></li>
     </ul>
   </section>
 
- <section id="resources">
-  <h2>Resources</h2>
-  <p>
-    <a href="files/Scarlett_Francini_CV.pdf" class="button-link" download>Download CV</a>
-    <a href="files/Research_Summary.pdf" class="button-link" download>Research Summary</a>
-    <a href="files/Poster_ThinFilms2024.pdf" class="button-link" download>Thin Films Poster</a>
-  </p>
-</section>
-
-
-  <section id="connect">
-    <h2>Connect</h2>
+  <section id="resources">
+    <h2>Resources</h2>
     <p>
-      <a href="https://www.linkedin.com/in/scarlettfrancini" target="_blank" class="button-link">LinkedIn</a>
+      <a href="files/Scarlett_Francini_CV.pdf" class="button-link" download>Download CV</a>
     </p>
   </section>
 
   <footer>
+    <h3>Let’s Connect</h3>
+    <p>
+      <a href="tel:+17329393639">+1 (732) 939-3639</a> | 
+      <a href="mailto:scarlett.francini@duke.edu">scarlett.francini@duke.edu</a> | 
+      <a href="https://www.linkedin.com/in/scarlettfrancini" target="_blank">LinkedIn</a>
+    </p>
     © 2025 Scarlett Francini
   </footer>
 
